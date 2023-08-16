@@ -4,6 +4,7 @@ import generateToken from "../utils/generateToken.js";
 import User from "../models/userModel.js";
 // import { fetchAllUsers } from "../Helpers/adminHelpers.js";
 
+
 // admin auth
 const authAdmin = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
