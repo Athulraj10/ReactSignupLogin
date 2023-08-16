@@ -8,7 +8,6 @@ import User from "../models/userModel.js";
 // admin auth
 const authAdmin = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
-  
   const admin = await Admin.findOne({ email });
 
   if (admin && (await admin.matchPassword(password))) {
