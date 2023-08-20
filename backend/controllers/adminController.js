@@ -25,6 +25,7 @@ const authAdmin = asyncHandler(async (req, res) => {
   }
 });
 
+
 // Logout admin
 const logoutAdmin = asyncHandler(async (req, res) => {
   res.cookie("jwt", "", {
