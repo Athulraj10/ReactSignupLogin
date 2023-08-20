@@ -17,12 +17,14 @@ const authUser = asyncHandler(async (req, res) => {
       email: user.email,
       image: user.imagePath?user.imagePath:null
     });
-    
+
   } else {
     res.status(401);
     throw new Error('Invalid email or password');
   }
 });
+
+
 
 // @desc    Register a new user
 // @route   POST /api/users
