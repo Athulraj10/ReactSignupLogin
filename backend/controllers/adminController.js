@@ -66,4 +66,6 @@ const deleteUser = asyncHandler(async(req,res)=>{
   }
 })
 
+
+
 export { authAdmin, logoutAdmin,getAllUsers,deleteUser };
