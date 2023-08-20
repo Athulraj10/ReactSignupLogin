@@ -49,6 +49,8 @@ const getAllUsers = asyncHandler(async (req,res) => {
   }    
 })
 
+
+
 const deleteUser = asyncHandler(async(req,res)=>{
   try {
     let userId = req.body.id;
