@@ -100,7 +100,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     if(req.file){
       user.imagePath = req.file.filename || user.imagePath;
      }
-
     if (req.body.password) {
       user.password = req.body.password;
     }
