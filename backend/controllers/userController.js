@@ -72,7 +72,7 @@ const registerUser = asyncHandler(async (req, res) => {
 const logoutUser = (req, res) => {
   res.cookie('jwt', '', {
     httpOnly: true,
-    
+
     expires: new Date(0),
   });
 
@@ -85,6 +85,7 @@ const logoutUser = (req, res) => {
 const getUserProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
   if (user) {
+    
     res.json({
       _id: user._id,
       name: user.name,
