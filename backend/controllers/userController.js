@@ -16,8 +16,9 @@ const authUser = asyncHandler(async (req, res) => {
       name: user.name,
 
       email: user.email,
-      
+
       image: user.imagePath?user.imagePath:null
+      
     });
 
 
