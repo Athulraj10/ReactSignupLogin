@@ -17,6 +17,8 @@ const authUser = asyncHandler(async (req, res) => {
       image: user.imagePath?user.imagePath:null
     });
 
+
+    
   } else {
     res.status(401);
     throw new Error('Invalid email or password');
