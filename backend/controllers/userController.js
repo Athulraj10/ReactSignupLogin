@@ -114,14 +114,14 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 
     const updatedUser = await user.save();
     res.json({
-      
+
       _id: updatedUser._id,
       name: updatedUser.name,
       email: updatedUser.email,
       image: updatedUser.imagePath
     });
   } else {
-    res.status(404);
+    res.status(404 );
     throw new Error('User not found');
   }
 
