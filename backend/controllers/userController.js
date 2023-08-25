@@ -12,13 +12,14 @@ const authUser = asyncHandler(async (req, res) => {
     generateToken(res, user._id);
     res.json({
       _id: user._id,
+      
       name: user.name,
       email: user.email,
       image: user.imagePath?user.imagePath:null
     });
 
 
-    
+
   } else {
     res.status(401);
     throw new Error('Invalid email or password');
