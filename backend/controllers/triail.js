@@ -70,3 +70,11 @@
 
 
 
+const arraylist = [1, 2, 1, 3, 4,5, 3, 5];
+
+const toFindDuplicates = arraylist => arraylist.filter((item, index) => arraylist.indexOf(item) !== index)
+
+const duplicateElements = toFindDuplicates(arraylist);
+console.log(duplicateElements);
+
+
