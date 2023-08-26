@@ -70,11 +70,22 @@
 
 
 
-const arraylist = [1, 2, 1, 3, 4,5, 3, 5];
+// const arraylist = [1, 2, 1, 3, 4,5, 3, 5];
 
-const toFindDuplicates = arraylist => arraylist.filter((item, index) => arraylist.indexOf(item) !== index)
+// const toFindDuplicates = arraylist => arraylist.filter((item, index) => arraylist.indexOf(item) !== index)
 
-const duplicateElements = toFindDuplicates(arraylist);
-console.log(duplicateElements);
+// const duplicateElements = toFindDuplicates(arraylist);
+// console.log(duplicateElements);
 
+var containsDuplicate = function(nums) {
+    let size=nums.length;
+    const uniqueSet = new Set(nums);
+    console.log(uniqueSet.size)
+    let duplicate = uniqueSet.length;
+    if (size == duplicate) {
+        
+    }
+};
+let nums = [1,2,3,1]
+containsDuplicate(nums)
 
