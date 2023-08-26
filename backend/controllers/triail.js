@@ -5,10 +5,9 @@
 //         if(arr[i]==arr[j]){
 //             duplicateArray.push(arr[j])
 //         }
-//     }    
+//     }
 // }
 // console.log(duplicateArray)
-
 
 // let arr = [1, 4, 2, 5, 7, 5, 6, 4, 4, 2];
 // let duplicateArray = [];
@@ -23,7 +22,6 @@
 
 // console.log(duplicateArray.sort());
 
-
 // let arr = [1, 4, 2, 5, 7, 5, 6, 4, 4, 2];
 // let duplicateArray = [];
 
@@ -37,11 +35,8 @@
 
 // console.log(duplicateArray);
 
-
-
 // let arr = [1, 4, 2, 5, 7, 5, 6, 4, 4, 2];
 // let duplicateCountMap = {};
-
 
 // for (let i = 0; i < arr.length; i++) {
 //     if (duplicateCountMap[arr[i]] === undefined) {
@@ -68,8 +63,6 @@
 // };
 // console.log(twoSum(nums,target))
 
-
-
 // const arraylist = [1, 2, 1, 3, 4,5, 3, 5];
 
 // const toFindDuplicates = arraylist => arraylist.filter((item, index) => arraylist.indexOf(item) !== index)
@@ -77,15 +70,31 @@
 // const duplicateElements = toFindDuplicates(arraylist);
 // console.log(duplicateElements);
 
-var containsDuplicate = function(nums) {
-    let size=nums.length;
-    const uniqueSet = new Set(nums);
-    console.log(uniqueSet.size)
-    let duplicate = uniqueSet.length;
-    if (size == duplicate) {
-        
-    }
-};
-let nums = [1,2,3,1]
-containsDuplicate(nums)
+// var containsDuplicate = function(nums) {
+//     let size=nums.length;
+//     const uniqueSet = new Set(nums);
+//     console.log(uniqueSet.size)
+//     let duplicate = uniqueSet.length;
+//     if (size == duplicate) {
+//     }
+// };
+// let nums = [1,2,3,1]
+// containsDuplicate(nums)
+// var removeDuplicates = function(nums) {
+//     let ans = 1;
+//     for(let i = 1; i < nums.length; i++)
+//         if (nums[i] != nums[i - 1]) {  
+//             nums[ans] = nums[i]; 
+//             ans++; 
+//             }
+//     return ans;
+// };
 
+var removeDuplicates = function(nums) {
+    let duplicate = new Set(nums)
+    let b=Array.from(duplicate)
+    return b
+};
+
+let nums = [1,1,2]
+console.log(removeDuplicates(nums))
