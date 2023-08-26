@@ -5,18 +5,7 @@
 //         if(arr[i]==arr[j]){
 //             duplicateArray.push(arr[j])
 //         }
-//     }
-//  return    
+//     }    
 // }
 // console.log(duplicateArray)
-function foo() {
-	let b = 1;
-	function inner() {
-        console.log('b'+b)
-		return b;
-	}
-	return inner;
-}
-let get_func_inner = foo();
 
-console.log(get_func_inner());
