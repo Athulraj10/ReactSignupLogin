@@ -55,5 +55,18 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(duplicateCountMap);
 
+let nums = [3,2,4], target = 6
+
+var twoSum = function(nums, target) {
+	for(let i =0;i<nums.length;i++){
+		for(let j=i;j!=i,j<=nums.length;j++){
+            if(nums[i]+nums[j]==target){
+                return [i,j]
+            }
+        }
+    }
+};
+console.log(twoSum(nums,target))
+
 
 
